@@ -37,12 +37,12 @@ axios.get('https://api.github.com/users/mary-tkachenko', { headers: {"Authorizat
 
 //addling to page (apply on logo)
 
-	let home_link = myInfo.html_url;
-	// console.log(home_link);
-	let where_link_git = document.getElementById('logo').getElementsByTagName('a');
-	// console.log(where_link_git);
-	where_link_git[0].setAttribute("href", home_link);
-	console.log(where_link_git);
+	 let home_link = myInfo.html_url;
+	 // console.log(home_link);
+	 let where_link_git = document.getElementById('logo').getElementsByTagName('a');
+	 // console.log(where_link_git);
+	 where_link_git[0].setAttribute("href", home_link);
+	 console.log(where_link_git);
 	 where_image.appendChild(image);
 
 
@@ -67,5 +67,4 @@ console.log(response);
 		console.log(list);
 		where_repos.appendChild(list);
 	}
-
 })
